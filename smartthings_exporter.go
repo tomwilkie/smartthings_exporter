@@ -93,11 +93,11 @@ var (
 				}
 				return value * 3600000, err
 			}},
-		
+
 		"humidity": {prometheus.NewDesc(
 			prometheus.BuildFQName(namespace, "", "relative_humidity_percentage"),
 			"Current relative humidity percentage.", []string{"id", "name"}, nil), valueFloat},
-		
+
 		"motion": {prometheus.NewDesc(
 			prometheus.BuildFQName(namespace, "", "motion_detected"),
 			"1 if presence is detected.", []string{"id", "name"}, nil),
