@@ -2,3 +2,5 @@
 .idea/
 dist/
 vendor/
+smartthings_exporter
+.st_token
